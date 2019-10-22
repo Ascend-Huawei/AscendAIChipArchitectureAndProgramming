@@ -1,0 +1,36 @@
+DDK_HOME     := ../../che/ddk/ddk
+LOCAL_DIR  := ./
+INCLUDE_DIR := $(DDK_HOME)/include
+
+LOCAL_MODULE_NAME := hiaiengine
+
+CC_FLAGS := -std=c++11
+
+#host or device
+CC_SIDE := host
+
+#ASIC or Atlas
+CC_PATTERN := ASIC
+
+local_src_files := \
+    $(LOCAL_DIR)/main.cpp \
+    $(LOCAL_DIR)/src/dest_engines.cpp \
+    $(LOCAL_DIR)/src/src_engines.cpp \
+    $(LOCAL_DIR)/src/sample_data.cpp \
+
+local_inc_dirs := \
+    $(LOCAL_DIR) \
+    $(INCLUDE_DIR)/inc \
+    $(INCLUDE_DIR)/third_party/protobuf/include \
+    $(INCLUDE_DIR)/third_party/cereal/include \
+    $(INCLUDE_DIR)/libc_sec/include
+
+local_shared_libs_dirs := \
+    $(DDK_HOME)/$(CC_SIDE)/lib
+
+local_shared_libs := \
+    pthread \
+    protobuf \
+    c_sec \
+
+include ./cc_rule.mk

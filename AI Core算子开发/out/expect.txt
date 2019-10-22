@@ -1,0 +1,1 @@
+dataPath=../operator/Reduction_output_2_3_4_sum_axis_1.data
