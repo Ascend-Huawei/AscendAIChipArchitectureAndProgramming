@@ -30,4 +30,4 @@
  # ============================================================================
 
 DDK_PATH=/home/ascend/tools/che/ddk/ddk/
-$DDK_PATH/bin/x86_64-linux-gcc5.4/omg --model=./yolov3_416.prototxt --weight=./yolov3_416.caffemodel  --plugin_path=../plugin --framework=0 --ddk_version=1.3.T34.B891 --output=./yolov3  --insert_op_conf=./aippyolov3.conf 
+$DDK_PATH/bin/x86_64-linux-gcc5.4/omg --model=./yolov3.prototxt --weight=./yolov3.caffemodel  --plugin_path=../plugin --framework=0 --ddk_version=1.3.T34.B891 --output=./yolov3  --insert_op_conf=./aippyolov3.conf 
