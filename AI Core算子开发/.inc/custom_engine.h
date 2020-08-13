@@ -44,8 +44,8 @@ public:
 class SrcEngine : public Engine {
     /**
     * @ingroup hiaiengine
-    * @brief HIAI_DEFINE_PROCESS : 重载Engine Process处理逻辑
-    * @[in]: 定义一个输入端口，一个输出端口
+    * @brief HIAI_DEFINE_PROCESS : Engine Process呒
+    * @[in]: 一丝冢一丝
     */
     HIAI_DEFINE_PROCESS(SOURCE_ENGINE_INPUT_SIZE, SOURCE_ENGINE_OUTPUT_SIZE)
 };
@@ -54,8 +54,8 @@ class SrcEngine : public Engine {
 class DestEngine : public Engine {
     /**
     * @ingroup hiaiengine
-    * @brief HIAI_DEFINE_PROCESS : 重载Engine Process处理逻辑
-    * @[in]: 定义一个输入端口，一个输出端口
+    * @brief HIAI_DEFINE_PROCESS : Engine Process呒
+    * @[in]: 一丝冢一丝
     */
     HIAI_DEFINE_PROCESS(DEST_ENGINE_INPUT_SIZE, DEST_ENGINE_OUTPUT_SIZE)
 };
